@@ -1,26 +1,9 @@
 {
+  "include": ["src"], //경로 설정
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+    "outDir": "build", //컴파일 위치
+    "target": "ES6", //JS 컴파일 버젼 설정.
+    "lib": ["ES6", "DOM"], // API의 환경설정.어떤 API를 사용하고 어떤 환경에서 코드를 실행하는 지를 지정
+    "strict": true
+  }
 }

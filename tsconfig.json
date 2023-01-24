@@ -3,8 +3,9 @@
   "compilerOptions": {
     "outDir": "build", //컴파일 위치
     "target": "ES6", //JS 컴파일 버젼 설정.
-    "lib": ["ES6", "DOM"], // API의 환경설정.어떤 API를 사용하고 어떤 환경에서 코드를 실행하는 지를 지정
+    "lib": ["ES6"], // API의 환경설정.어떤 API를 사용하고 어떤 환경에서 코드를 실행하는 지를 지정
     "strict": true, // 엄격 모드 , d.ts(declare)파일이 없는 경우에 대해서도 제한시킨다.
-    "allowJs": true // Ts 안에서 Js를 허용 시킨다.
+    "esModuleInterop": true,
+    "module": "CommonJS"
   }
 }
